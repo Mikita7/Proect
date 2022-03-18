@@ -1,0 +1,198 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style-type: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*----------------------- Общие классы -------------------------- */
+
+.wrapper {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.center {
+    max-width: 1160px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Publick section */
+
+.main-section header .right-side .menu .proect a {
+    border-bottom: none;
+}
+
+.publication {
+    font-family: 'Open Sans';
+    padding-bottom: 140px;
+}
+
+.publication h1 {
+    font-size: 46px;
+    line-height: 63px;
+    color: gba(66, 66, 66, 1);
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+
+.publication .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.publication .card .item {
+    border-bottom: 1px solid #AEA38B;
+    border-right: 1px solid #AEA38B;
+    padding-right: 40px;
+
+}
+
+.publication .card .item:nth-child(2n) {
+    border-right: none;
+    padding-left: 40px;
+    padding-right: 0;
+}
+
+.publication .card .item h3 {
+    font-size: 28px;
+    line-height: 39px;
+    color: rgba(66, 66, 66, 1);
+    margin-bottom: 20px;
+    padding-top: 40px;
+}
+
+.publication .card .item p {
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(66, 66, 66, 1);
+    margin-bottom: 30px;
+}
+
+.publication .card .item a {
+    display: block;
+    font-size: 18px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 1);
+    width: 260px;
+    background-color: rgba(216, 177, 82, 1);
+    text-align: center;
+    text-decoration: none;
+    padding: 18px 0;
+    transition: 0.8s;
+    margin-bottom: 50px;
+    align-self: end;
+    box-sizing: border-box;
+
+}
+
+.publication .card .item a:hover {
+    background-color: #4d3c11;
+
+}
+
+/* .publication .card .item:nth-child(2) p{
+    padding-bottom: 25px;
+} */
+
+.publication .card .item:nth-child(8) p {
+    padding-bottom: 30px;
+}
+
+.publication .card .item:nth-child(9) p {
+    padding-bottom: 94px;
+}
+
+@media screen and (max-width:1200px) {
+
+    .center {
+        width: 95%;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+
+    .publication {
+        padding-bottom: 30px;
+    }
+
+    .publication h1 {
+        margin-bottom: 15px;
+    }
+
+    .publication .card {
+        grid-template-columns: 1fr;
+    }
+
+    .publication .card .item:nth-child(2n) {
+        padding-left: 0;
+    }
+
+    .publication .card .item {
+        border-right: none;
+
+        padding-right: 0;
+    }
+
+    .publication .card .item:nth-child(9) p {
+        padding-bottom: 0;
+    }
+
+    .publication .card .item:nth-child(8) p {
+        padding-bottom: 0;
+    }
+
+    .publication .card .item a {
+        width: 100%;
+    }
+
+}

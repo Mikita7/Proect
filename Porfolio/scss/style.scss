@@ -1,0 +1,245 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style-type: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*----------------------- Общие классы -------------------------- */
+
+@mixin adaptiv($w) {
+	@media screen and (max-width:$w) {
+		@content;
+	}
+}
+
+.wrapper{
+	max-width: 1400px;
+	width: 100%;
+	margin: 0 auto;
+	
+}
+
+.center{
+	max-width: 1160px;
+	width: 100%;
+	margin: 0 auto;
+
+	
+}
+
+/* ------------------ */
+
+.main-section header .right-side .menu .proect a{
+	border-bottom: none;
+}
+
+
+
+.center{
+@include adaptiv(1200px){
+      max-width: 95%;
+}
+}
+
+footer .content .social .icon div a img{
+	width: auto;
+	@include adaptiv(1024px){
+        width: 50%;
+	}
+
+	@include adaptiv(500px){
+        width: 100%;
+	}
+}
+
+.title{
+	margin-top: 5px;
+	margin-bottom: 68px;
+h2{
+	font-size: 46px;
+	line-height: 63px;
+	color:#424242;
+    font-weight: 600;
+	font-family: 'Open sans';
+	@include adaptiv(600px){
+		font-size: 36px;
+		line-height: 42px;
+  }
+}
+}
+
+.slider{
+	width: 65%;
+	
+	@include adaptiv(1024px){
+		width: 100%;
+  }
+}
+
+.info1{
+	font-family: 'Open Sans';
+	h3{
+		margin-top: 150px;
+		margin-bottom: 20px;
+		font-size: 46px;
+		line-height: 63px;
+		color: #424242;
+		font-weight: 600;
+		@include adaptiv(600px){
+			margin-top: 50px;
+			font-size: 32px;
+			line-height: 42px;
+	  }
+	}
+
+	p{
+		margin-bottom: 60px;
+		font-size: 18px;
+		line-height: 25px;
+		color: #424242;
+	}
+
+	form{
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 140px;
+
+		@include adaptiv(768px){
+			display: block;
+	  }
+
+	  @include adaptiv(600px){
+		margin-bottom: 50px;
+  }
+		.left-side{
+
+			display:grid;
+			grid-template-columns: 1fr;
+
+			input{
+				width: 360px;
+				height: 60px;
+				margin-bottom: 20px;
+				font-size: 24px;
+				border: 2px solid #AEA38B;
+
+				@include adaptiv(600px){
+					width: 100%;
+			  }
+
+				&::placeholder{
+					padding-left: 30px;
+					font-size: 18px;
+					line-height: 25px;
+					color: #424242;
+				}
+			}
+
+			button{
+				width: 360px;
+				height: 60px;
+				background-color:#D8B152 ;
+				color: #ffffff;
+				border: none;
+				transition: 0.8s;
+				&:hover{
+                  background-color:  #4d3c11;;
+				  
+				}
+
+				@include adaptiv(768px){
+					display: none;
+			  }
+			}
+
+		}
+
+		
+
+		.right-side{
+
+			textarea{
+			width:760px;
+			height: 230px;
+			border: 2px solid #AEA38B;
+			font-size: 24px;
+			line-height: 32px;
+			@include adaptiv(1200px){
+				width: 500px;
+		     }
+
+			 @include adaptiv(920px){
+				width: 100%;
+		  }
+			&::placeholder{
+				padding-left: 30px;
+				font-size: 18px;
+				line-height: 25px;
+				color: #424242;
+				padding-top: 18px;
+			}
+		    }
+
+			button{
+				display: none;
+				width: 360px;
+				height: 60px;
+				background-color:#D8B152 ;
+				color: #ffffff;
+				border: none;
+				transition: 0.8s;
+				&:hover{
+                  background-color: #ffffff;
+				  color: #424242;
+				  border: solid black;
+				}
+				@include adaptiv(768px){
+					display: block;
+					margin-top: 20px;
+			  }
+			  @include adaptiv(600px){
+				width: 100%;
+		  }
+			}
+
+	    }
+	}
+}

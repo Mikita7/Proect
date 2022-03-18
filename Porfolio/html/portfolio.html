@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,600&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" href="/Main/images/head/Logo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="/add/Footer/scss/styleFooter.css">
+    <link rel="stylesheet" href="/add/Header/scss/style.css">
+
+    <link rel="stylesheet" href="../scss/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
+
+</head>
+
+
+<body>
+
+    <div class="wrapper">
+
+        <section class="main-section">
+
+            <header class="center">
+                <div class="logo">
+                    <a href="/Main/html/main.html"><img src="/add/Header/images/logo1.svg" alt="Logo"></a>
+                </div>
+
+                <div class="right-side">
+                    <ul class="menu">
+                        <li class="item proect"><a href="/Main/html/main.html"> Наши проекты </a></li>
+                        <li class="item"><a href="/Media/html/media.html">Медиа</a></li>
+                        <li class="item"><a href="/AboutUs/html/project.html">О нас</a></li>
+                        <li class="item"><a href="#1">Контакты</a></li>
+                        <li class="close" id="close-btn">x</li>
+                    </ul>
+                    <div class="burger-menu">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </header>
+        </section>
+
+        <div class="title center animate__fadeInDown wow">
+            <h2>Отзывы наших клиентов</h2>
+        </div>
+
+
+        <section class="slider center">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../images/1.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/3.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev bth" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next bth" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+
+        <section class="info1 center">
+
+            <h3 class="animate__fadeInDown wow">Заказывали проект у нас?</h3>
+            <p class="animate__fadeInUp wow">Оставьте ваш отзыв в форме ниже и мы его опубликуем на нашем сайте</p>
+
+            <form action="#">
+                <div class="left-side">
+                    <input type="text" name="fname" placeholder="Ваше имя">
+                    <input type="text" name="number" placeholder="Номер телефона">
+                    <button>Отправить</button>
+                </div>
+                <div class="right-side">
+                    <textarea name="textf" id="" placeholder="Ваш отзыв"></textarea>
+                    <button>Отправить</button>
+                </div>
+            </form>
+
+        </section>
+
+    </div>
+
+    <footer class="wrapper" id="1">
+        <div class="content center">
+            <div class="logo">
+                <img src="/add/Footer/images/logo.png" alt="LOGO">
+            </div>
+            <div class="info">
+                <h3 id="plus">Информация<span>+</span></h3>
+                <ul id="res">
+                    <li><a href="/Project-houses/html/project.html">Загородные дома</a></li>
+                    <li><a href="#">Квартиры</a></li>
+                    <li><a href="#">Нежилые помещения</a></li>
+                    <li><a href="/Media/html/media.html">Медиафайлы</a></li>
+                    <li><a href="/AboutUs/html/project.html">О компании</a></li>
+                </ul>
+            </div>
+
+            <div class="contact">
+                <h3>Контакты</h3>
+                <p class="phone"><span><img src="/add/Footer/images/phone.png" alt="phone"></span><a
+                        href="tel:+ 7 (499) 409-16-12" class="tel">+ 7 (499) 409-16-12</a></p>
+                <p class="mail"><span><img src="/add/Footer/images/mail.png" alt="mail"></span><a
+                        href="mailto:italproekt@gmail.com" class="mail">italproekt@gmail.com</a></p>
+            </div>
+
+            <div class="social">
+                <h3>Соц. сети</h3>
+                <div class="icon">
+                    <div class="facebook"> <a href="#"><img src="/add/Footer/images/facebook.png" alt="FB"></a></div>
+                    <div class="youtube"><a href="#"><img src="/add/Footer/images/youtube.png" alt="YT"></a></div>
+                    <div class="perescope"><a href="#"><img src="/add/Footer/images/perescope.png" alt="PS"></a></div>
+                    <div class="inst"><a href="#"><img src="/add/Footer/images/inst.png" alt="Inst"></a></div>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+    </footer>
+
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <script src="/lib/wow.min.js"></script>
+    <script>
+        const wow = new WOW({
+            boxClass: 'wow', /* класс, который необходим для работы wow.js */
+            animateClass: 'animate__animated', /* класс, который будет автоматически добавляться анимируемым элементам при прокрутке страницы */
+            offset: 30, /* по-умолчанию установлено значение 0, то есть как только при прокрутке страницы, элемент достигает низа окна браузера проигрываться анимация, в данном случае анимация начнется на 30px выше от низа окна браузера */
+            mobile: true, /* если true, то на мобильных тоже будет анимация, если false, то на мобильных анимация отключается */
+            live: true /* если true, то анимация будет работать даже на динамически добавляемых элементах, если false, то только на тех элементах, которые были на странице при ее загрузке */
+        })
+        wow.init(); /* Инициализация плагина с установленными выше свойствами */
+
+    </script>
+
+    <script src="/lib/js/header.js"></script>
+    <script src="/add/Footer/js/footer.js"></script>
+
+</body>
+
+
+</html>

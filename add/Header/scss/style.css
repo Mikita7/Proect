@@ -1,0 +1,229 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style-type: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*----------------------- Общие классы -------------------------- */
+
+
+
+.wrapper {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.center {
+    max-width: 1160px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main-section header .right-side .menu li.close {
+    display: none;
+}
+
+.main-section header {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.main-section header .right-side .menu {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 43px;
+}
+
+.main-section header .right-side .menu li {
+    margin-left: 50px;
+}
+
+.main-section header .right-side .menu li a {
+    text-decoration: none;
+    color: #424242;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    transition: 0.6s;
+}
+
+.main-section header .right-side .menu .proect a {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #D8B152;
+}
+
+.main-section header .right-side .menu li a:hover {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #D8B152;
+    font-size: 20px;
+}
+
+.main-section header .right-side .burger-menu {
+    display: none;
+}
+
+@media screen and (max-width:1200px) {
+
+    .center {
+        width: 90%;
+
+    }
+}
+
+@media screen and (max-width:1024px) {
+
+    /* Первая секция */
+    .main-section header .right-side .menu {
+        display: none;
+    }
+
+    .main-section header .right-side .burger-menu {
+        display: block;
+        margin-left: 200px;
+        margin-top: 40px;
+    }
+
+    .main-section header .right-side .burger-menu div {
+        width: 44px;
+        height: 2px;
+        background-color: #D8B152;
+        margin: 5px 0;
+        margin-left: 16px;
+
+    }
+
+    .main-section header .right-side .burger-menu div:first-child,
+    .main-section header .right-side .burger-menu div:last-child {
+        width: 60px;
+        height: 2px;
+        background-color: #D8B152;
+        margin: 5px 0;
+    }
+
+    .main-section header .right-side .menu {
+        /* display: none; */
+        min-height: 100vh;
+        background: rgba(0, 0, 0, 0.8);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        min-width: 270px;
+        color: #fff;
+        padding-top: 130px;
+        transition: 1s;
+        z-index: 10;
+    }
+
+    .main-section header .right-side .menu li.close {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        font-size: 25px;
+    }
+
+    .main-section header .right-side .menu-show {
+        /* display: block; */
+        left: 0;
+    }
+
+    .main-section header .right-side .menu li {
+        margin-bottom: 40px;
+    }
+
+    .main-section header .right-side .menu li a {
+        color: aliceblue;
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    /* .main-section header .right-side .menu {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+        height: 400px;
+    } */
+}
+
+@media screen and (max-width:600px) {
+    .center {
+        width: 85%;
+    }
+
+    .main-section header .right-side .burger-menu {
+        margin-left: 50%;
+    }
+
+    .main-section header .logo img {
+        width: 70%;
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .main-section header .logo img {
+        padding-top: 23px;
+        width: 80%;
+    }
+
+    .main-section header .right-side .burger-menu {
+        margin-left: 70%;
+    }
+
+}

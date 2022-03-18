@@ -1,0 +1,654 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style-type: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*----------------------- Общие классы -------------------------- */
+
+
+
+.wrapper {
+	max-width: 1400px;
+	width: 100%;
+	margin: 0 auto;
+
+}
+
+.center {
+	max-width: 1160px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* --------------------Конец общих классов */
+
+/* Первая секция */
+.main-section {
+	background-image: url(../images/head/backImage.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-size: cover;
+	background-position: center;
+	font-family: 'open sans';
+	height: 800px;
+}
+
+
+/* Header */
+
+.main-section header {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.main-section header .right-side .menu {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 43px;
+}
+
+.main-section header .right-side .menu li {
+	margin-left: 50px;
+}
+
+.main-section header .right-side .menu li a {
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 18px;
+	line-height: 26px;
+	font-weight: 400;
+	transition: 0.6s;
+}
+
+.main-section header .right-side .menu .proect a {
+	padding-bottom: 5px;
+	border-bottom: 1px solid #D8B152;
+}
+
+.main-section header .right-side .menu li a:hover {
+	padding-bottom: 5px;
+	border-bottom: 1px solid #D8B152;
+	font-size: 20px;
+}
+
+.main-section header .right-side .burger-menu {
+	display: none;
+}
+
+/* Конец Header*/
+
+.main-info {
+	display: flex;
+	justify-content: space-between;
+	font-family: 'open sans';
+
+	align-items: center;
+}
+
+.main-info h1 {
+	font-size: 56px;
+	line-height: 78px;
+	color: #FFFFFF;
+	font-weight: 600;
+}
+
+.main-info .right-side .top-btn {
+	color: #FFFFFF;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 25px;
+	text-align: center;
+	margin-bottom: 38px;
+}
+
+.main-info .right-side {
+	text-align: center;
+}
+
+.main-info .right-side .btn a {
+	color: #FFFFFF;
+	font-size: 18px;
+	line-height: 25px;
+	font-weight: 600;
+	text-align: center;
+	padding: 18px 30%;
+	background-color: #D8B152;
+	text-decoration: none;
+	transition: 0.8s;
+}
+
+.main-info .right-side .btn a:hover {
+	background-color: #FFFFFF;
+	color: black;
+}
+
+/* Конец первой секции */
+
+/* Вторая секция */
+.section-services .top-position h3 {
+	font-family: 'open sans';
+	font-size: 46px;
+	line-height: 63px;
+	color: #424242;
+	font-weight: 600;
+	padding-top: 120px;
+	margin-bottom: 60px;
+}
+
+.section-services .card {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 40px;
+	font-family: 'open sans';
+}
+
+.section-services .card .item {
+	height: 360px;
+	position: relative;
+}
+
+.section-services .card .item img {
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.section-services .card .item div a {
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 38px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+/* Первая карточка */
+.section-services .card .first div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(0deg, rgba(80, 61, 43, 0.7), rgba(80, 61, 43, 0.7));
+	opacity: 0;
+	transition: 0.8s;
+}
+
+.section-services .card .first div a {
+	display: block;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	padding-top: 161px;
+
+}
+
+.section-services .card .first:hover div {
+	opacity: 1;
+}
+
+/* Конец первой карточки */
+
+/* Вторая карточка */
+.section-services .card .second div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(0deg, rgba(80, 61, 43, 0.4), rgba(80, 61, 43, 0.4));
+	transition: 0.8s;
+}
+
+
+.section-services .card .second div p {
+	font-size: 28px;
+	line-height: 38px;
+	color: #FFFFFF;
+	font-weight: 600;
+	text-align: center;
+	padding-top: 116px;
+	margin-bottom: 30px;
+}
+
+.section-services .card .second div a {
+	display: inline-block;
+	color: #FFFFFF;
+	font-size: 18px;
+	line-height: 25px;
+	font-weight: 600;
+	width: 230px;
+	padding: 18px;
+	background-color: #D8B152;
+	text-align: center;
+	margin-left: 50px;
+	transition: 0.8s;
+}
+
+.section-services .card .second div a:hover {
+	background-color: #FFFFFF;
+	color: black;
+}
+
+/* Конец второй карточки */
+
+/* Третья карточка */
+.section-services .card .third div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(0deg, rgba(80, 61, 43, 0.7), rgba(80, 61, 43, 0.7));
+	opacity: 0;
+	transition: 0.8s;
+}
+
+.section-services .card .third div a {
+	display: block;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	padding-top: 161px;
+
+}
+
+.section-services .card .third:hover div {
+	opacity: 1;
+}
+
+/* Конец третьей карточки */
+
+/* Конец второй секции */
+
+/* Третья секция */
+.instagram {
+	padding-bottom: 140px;
+}
+
+.instagram h3 {
+	font-size: 46px;
+	font-weight: 600;
+	line-height: 63px;
+	color: #424242;
+	font-family: 'Open Sans';
+	margin-top: 120px;
+	margin-bottom: 60px;
+}
+
+.instagram .card {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	/* grid-template-rows: 262px 262px; */
+	row-gap: 40px;
+	column-gap: 40px;
+	margin-bottom: 50px;
+}
+
+.instagram .card .item a img {
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+
+
+.instagram .btn-inst a {
+	display: block;
+	color: #FFFFFF;
+	font-size: 18px;
+	line-height: 25px;
+	font-weight: 600;
+	font-family: 'Open Sans';
+	text-decoration: none;
+	background-color: #D8B152;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	margin: 0 auto;
+	width: 260px;
+	text-align: center;
+	transition: 0.8s;
+}
+
+.instagram .btn-inst a:hover {
+	background-color: #4d3c11;
+}
+
+/* Конец третьей секции */
+
+/* Подвал */
+
+/* footer {
+	background-color: #202020;
+	font-family: 'Open sans';
+}
+
+footer .content {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+} */
+
+.main-section header .right-side .menu li.close {
+	display: none;
+}
+
+/* Adaptiv */
+
+@media screen and (max-width:1200px) {
+
+	.center {
+		width: 90%;
+		/* max-width: 90%; */
+	}
+
+	/* Первая секция */
+
+	.main-info h1 {
+		font-size: 42px;
+		line-height: 58px;
+	}
+
+	/* Конец первой секции */
+
+	/* Вторая секция */
+	.section-services .card .second div a {
+		display: block;
+		margin: 0 auto;
+	}
+
+	/* Footer */
+
+	footer .content .left-side {
+		flex-wrap: wrap;
+	}
+
+	footer .content .left-side ul {
+		margin-top: 10px;
+		margin-left: 0;
+	}
+}
+
+@media screen and (max-width:1024px) {
+
+	/* Первая секция */
+
+	.main-section header .right-side .menu {
+		display: none;
+	}
+
+	.main-section header .right-side .menu {
+		display: none;
+	}
+
+	.main-section header .right-side .burger-menu {
+		display: block;
+		margin-left: 200px;
+		margin-top: 40px;
+	}
+
+	.main-section header .right-side .burger-menu div {
+		width: 44px;
+		height: 2px;
+		background-color: #D8B152;
+		margin: 5px 0;
+		margin-left: 16px;
+
+	}
+
+	.main-section header .right-side .burger-menu div:first-child,
+	.main-section header .right-side .burger-menu div:last-child {
+		width: 60px;
+		height: 2px;
+		background-color: #D8B152;
+		margin: 5px 0;
+	}
+
+	.main-info {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.main-info .right-side {
+		text-align: left;
+	}
+
+	.main-info .right-side .top-btn {
+		margin-top: 25px;
+		text-align: left;
+	}
+
+	.main-section header .right-side .menu {
+		/* display: none; */
+		min-height: 100vh;
+		background: rgba(0, 0, 0, 0.8);
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		position: fixed;
+		top: 0;
+		left: -100%;
+		width: 100%;
+		min-width: 270px;
+		color: #fff;
+		padding-top: 110px;
+		transition: 1s;
+		z-index: 10;
+	}
+
+	.main-section header .right-side .menu li.close {
+		display: block;
+		position: absolute;
+		top: 15px;
+		right: 20px;
+		font-size: 25px;
+	}
+
+	.main-section header .right-side .menu-show {
+		/* display: block; */
+		left: 0;
+	}
+
+	.main-section header .right-side .menu li {
+		margin-bottom: 40px;
+	}
+
+	.main-section header .right-side .menu li a {
+		color: aliceblue;
+		font-size: 32px;
+		line-height: 42px;
+
+	}
+
+	/* Конец первой секции */
+
+	/* Вторая секция*/
+
+	.section-services .card {
+		column-gap: 10px;
+	}
+
+	.section-services .card .item div {
+		opacity: 1;
+	}
+
+	.section-services .card .second div a {
+		width: 60%;
+	}
+
+	.section-services .top-position h3 {
+		padding-top: 60px;
+	}
+
+	/* Конец второй секции */
+
+	/* Третья секция */
+	.instagram .card {
+		row-gap: 10px;
+		column-gap: 10px;
+	}
+
+	.instagram h3 {
+		margin-top: 60px;
+		margin-bottom: 30px;
+	}
+
+	/* Конец третьей секции */
+
+
+}
+
+@media screen and (max-width:768px) {
+
+
+	/* Вторая секция */
+	.section-services .top-position h3 {
+		padding-top: 60px;
+	}
+
+	/* Третья секция */
+	.instagram h3 {
+		font-size: 32px;
+		line-height: 44px;
+	}
+
+}
+
+@media screen and (max-width:600px) {
+	.center {
+		width: 85%;
+	}
+
+	/* Первая секция */
+	.main-info {
+		text-align: center;
+	}
+
+	.main-info .right-side .btn a {
+		width: 100%;
+		display: inline-block;
+		padding: 18px 0;
+	}
+
+	.main-section header .right-side .burger-menu {
+		margin-left: 50%;
+	}
+
+	.main-info h1 {
+		font-size: 34px;
+		line-height: 46px;
+		text-align: left;
+	}
+
+	.main-section header .logo img {
+		width: 70%;
+		max-width: 100%;
+		height: auto;
+		object-fit: cover;
+	}
+
+	/* Конец первой секции */
+
+	/* Вторая секция */
+	.section-services .card {
+		grid-template-columns: 1fr;
+		row-gap: 30px;
+	}
+
+	.section-services .top-position h3 {
+		font-size: 34px;
+		line-height: 42px;
+		padding-top: 40px;
+		margin-bottom: 30px;
+	}
+
+	/* Третья секция */
+
+	.instagram .card {
+		grid-template-columns: 1fr 1fr;
+		row-gap: 20px;
+		column-gap: 20px;
+	}
+
+	.instagram .btn-inst a {
+		width: 100%;
+	}
+
+
+}
+
+@media screen and (max-width:425px) {
+	.main-section header .logo img {
+		padding-top: 23px;
+		width: 80%;
+	}
+
+	.main-info h1 {
+		font-size: 24px;
+		line-height: 32px;
+	}
+
+	.main-section header .right-side .burger-menu {
+		margin-left: 70%;
+	}
+
+	/* Третья секция */
+
+	.instagram h3 {
+		font-size: 24px;
+		line-height: 32px;
+		margin-top: 30px;
+	}
+
+	.instagram .card {
+		margin-bottom: 20px;
+	}
+}
